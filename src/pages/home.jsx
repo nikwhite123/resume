@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+import VKPost from "../components/VKPost";
 import "../styles/styles.css";
 import { motion } from "framer-motion";
 
@@ -26,7 +27,7 @@ export default function Home() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
-            Nikita Stenechkin
+            Nikita Stenechkin -
           </motion.h1>
 
           <motion.h1
@@ -55,14 +56,11 @@ export default function Home() {
 
           <div className="about-center">
             {/* Здесь вставишь своё фото */}
-            <img src="/images/my-photo.jpg" alt="Nikita" className="profile-img" />
+            <img src="/images/homepage1.jpg" alt="Nikita" className="profile-img" />
           </div>
 
           <div className="about-right">
-            <p>
-              В свободное время изучаю новые технологии, вдохновляюсь дизайном и
-              работаю над личными проектами. Всегда открыт к новым вызовам.
-            </p>
+            <VKPost />
           </div>
         </motion.section>
       </main>

@@ -12,17 +12,17 @@ export default function Header() {
       {/* Левая часть — имя */}
       <div className="header-left">
         <a href="#top" className="brand" aria-label="На верх страницы">
-          Никита
+          Nikita
         </a>
       </div>
 
       {/* Центр — навигация */}
       <nav className="nav" aria-label="Основная навигация">
         {[
-          { id: "about", label: "Обо мне" },
-          { id: "skills", label: "Навыки" },
-          { id: "projects", label: "Проекты" },
-          { id: "contact", label: "Контакты" },
+          { id: "about", label: "About me" },
+          { id: "skills", label: "Skills" },
+          { id: "projects", label: "Project" },
+          { id: "contact", label: "Contacts" },
         ].map((item) => (
           <button
             key={item.id}
