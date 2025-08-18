@@ -1,60 +1,71 @@
-import React from 'react';
-import '../styles/styles.css';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Section from '../components/Section';
-import SkillBar from '../components/SkillBar';
-import ProjectCard from '../components/ProjectCard';
+import React from "react";
+import Header from "../components/Header";
+import "../styles/styles.css";
+import { motion } from "framer-motion";
 
-const Home = () => {
+export default function Home() {
   return (
-    <div className="app-container">
-      {/* Шапка с именем, фото, контактами */}
-      <Header
-        name="Ваше Имя"
-        title="Frontend Developer"
-        photo="/images/guus.gif"
-        contacts={{
-          email: "email@example.com",
-          github: "https://github.com/username",
-          linkedin: "https://linkedin.com/in/username"
-        }}
-      />
+    <>
+      <Header />
+      <main className="home">
+        {/* Приветствие */}
+        <motion.h2
+          className="hello"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          Hello, I am Nikita
+        </motion.h2>
 
-      {/* О себе */}
-      <Section title="About Me">
-        <p>
-          Я frontend разработчик с опытом в React и Vite. Люблю создавать
-          современные и удобные интерфейсы.
-        </p>
-      </Section>
+        {/* Большая жирная надпись */}
+        <div className="title-block">
+          <motion.h1
+            className="title-left"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+          >
+            Nikita Stenechkin
+          </motion.h1>
 
-      {/* Навыки */}
-      <Section title="Skills">
-        <SkillBar skill="React" level={90} />
-        <SkillBar skill="JavaScript" level={85} />
-        <SkillBar skill="CSS / Tailwind" level={80} />
-        <SkillBar skill="TypeScript" level={70} />
-      </Section>
+          <motion.h1
+            className="title-right"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+          >
+            Frontender
+          </motion.h1>
+        </div>
 
-      {/* Проекты */}
-      <Section title="Projects">
-        <ProjectCard
-          name="Мой сайт-портфолио"
-          description="Современный резюме-сайт на React + Vite."
-          link="https://github.com/username/portfolio"
-        />
-        <ProjectCard
-          name="Другой проект"
-          description="Описание проекта."
-          link="#"
-        />
-      </Section>
+        {/* Блок с фото и текстами */}
+        <motion.section
+          className="about-block"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2 }}
+        >
+          <div className="about-left">
+            <p>
+              Я люблю создавать красивые и удобные интерфейсы, которые делают
+              жизнь проще. Всегда ищу баланс между функциональностью и эстетикой.
+            </p>
+          </div>
 
-      {/* Футер */}
-      <Footer />
-    </div>
+          <div className="about-center">
+            {/* Здесь вставишь своё фото */}
+            <img src="/images/my-photo.jpg" alt="Nikita" className="profile-img" />
+          </div>
+
+          <div className="about-right">
+            <p>
+              В свободное время изучаю новые технологии, вдохновляюсь дизайном и
+              работаю над личными проектами. Всегда открыт к новым вызовам.
+            </p>
+          </div>
+        </motion.section>
+      </main>
+    </>
   );
-};
-
-export default Home;
+}
