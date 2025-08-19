@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import VKPost from "../components/VKPost";
 import AboutUs from "../pages/AboutUs";
 import Projects from "../pages/Projects"; 
+import Experience from "../pages/Experience";
 import "../styles/styles.css";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -90,6 +91,9 @@ export default function Home() {
 
         <div className="section-wrapper">
           <Projects />
+        </div>
+        <div className="section-wrapper">
+          <Experience />
         </div>
       </main>
     </>
