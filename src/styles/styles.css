@@ -269,30 +269,30 @@ body {
   color: #ff4d4d;
 }
 
-.about-us-section {
-  background: #000;
-  color: #fff;
-  padding: 80px 20px;
+.about-section {
+  background-color: #000;   /* чёрный фон */
+  color: #fff;              /* белый текст */
+  padding: 100px 50px;      /* отступы сверху/снизу и по бокам */
 }
 
-.about-us-container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1000px;
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* левая колонка 1 часть, правая 2 части */
+  align-items: center;           /* по центру по вертикали */
+  gap: 40px;
+  max-width: 1200px;
   margin: 0 auto;
-  gap: 20px;
-  flex-wrap: wrap;
 }
 
-.about-us-left h2 {
-  font-size: 36px;
-  font-weight: 700;
+.about-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: left;
 }
 
-.about-us-right {
-  max-width: 600px;
-  font-size: 18px;
-  line-height: 1.6;
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
 }
 
 .extra-info {
@@ -308,4 +308,9 @@ body {
   color: #000;
   padding: 80px 20px;
   text-align: center;
+}
+
+.section-wrapper {
+  margin-top: 100px;   /* отступ сверху */
+  margin-bottom: 100px; /* отступ снизу */
 }

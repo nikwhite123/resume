@@ -47,7 +47,7 @@ export default function Header() {
 
         {/* Иконки — заглушки со ссылками */}
         <a
-          href="#" // замените на ссылку на GitHub
+          href="https://github.com/nikwhite123" // замените на ссылку на GitHub
           target="_blank"
           rel="noreferrer"
           className="icon-link"
@@ -62,7 +62,7 @@ export default function Header() {
         </a>
 
         <a
-          href="#" // замените на ссылку на LinkedIn/Telegram
+          href="https://web.telegram.org" // замените на ссылку на LinkedIn/Telegram
           target="_blank"
           rel="noreferrer"
           className="icon-link"

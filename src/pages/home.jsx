@@ -8,17 +8,15 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 export default function Home() {
-  // Для смены фона
   const [darkSection, setDarkSection] = useState(false);
 
-  // Хук Intersection Observer для анимации
   const { ref, inView } = useInView({ triggerOnce: true });
   const controls = useAnimation();
 
   useEffect(() => {
     if (inView) {
       controls.start("visible");
-      setDarkSection(true); // ✅ меняем фон, когда блок попадает в зону видимости
+      setDarkSection(true);
     } else {
       setDarkSection(false);
     }
@@ -28,7 +26,7 @@ export default function Home() {
     <>
       <Header />
       <main className={`home ${darkSection ? "dark-bg" : ""}`}>
-        {/* Приветствие */}
+
         <motion.h2
           className="hello"
           initial={{ opacity: 0, y: -20 }}
@@ -38,7 +36,6 @@ export default function Home() {
           Hello, I am Nikita
         </motion.h2>
 
-        {/* Большой заголовок */}
         <div className="title-block">
           <motion.h1
             className="title-left"
@@ -59,9 +56,9 @@ export default function Home() {
           </motion.h1>
         </div>
 
-        {/* Блок с фото и текстами */}
+
         <motion.section
-          ref={ref} // ✅ сюда вешаем observer
+          ref={ref} 
           className="about-block"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -87,10 +84,13 @@ export default function Home() {
             <VKPost />
           </div>
         </motion.section>
+        <div className="section-wrapper">
+          <AboutUs />
+        </div>
 
-        {/* Подключаем отдельные секции */}
-        <AboutUs />
-        <Projects />
+        <div className="section-wrapper">
+          <Projects />
+        </div>
       </main>
     </>
   );
