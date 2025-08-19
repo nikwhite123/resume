@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import VKPost from "../components/VKPost";
+import AboutUs from "../pages/AboutUs";
+import Projects from "../pages/Projects"; 
 import "../styles/styles.css";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -16,6 +18,9 @@ export default function Home() {
   useEffect(() => {
     if (inView) {
       controls.start("visible");
+      setDarkSection(true); // ✅ меняем фон, когда блок попадает в зону видимости
+    } else {
+      setDarkSection(false);
     }
   }, [controls, inView]);
 
@@ -56,6 +61,7 @@ export default function Home() {
 
         {/* Блок с фото и текстами */}
         <motion.section
+          ref={ref} // ✅ сюда вешаем observer
           className="about-block"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -82,50 +88,9 @@ export default function Home() {
           </div>
         </motion.section>
 
-        {/* Черный блок About Us */}
-        <section
-          className="about-us-section"
-          ref={ref}
-          onMouseEnter={() => setDarkSection(true)}
-        >
-          <motion.div
-            className="about-us-container"
-            initial="hidden"
-            animate={controls}
-            variants={{
-              hidden: { opacity: 0, y: 50 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            transition={{ duration: 1.2 }}
-          >
-            <div className="about-us-left">
-              <h2>About Us</h2>
-            </div>
-            <div className="about-us-right">
-              <p>
-                Я фронтенд разработчик, создаю современные веб-приложения с
-                красивым дизайном и удобным интерфейсом. Люблю React, Vite,
-                TailwindCSS и анимации на сайте.
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div
-            className="extra-info"
-            initial={{ opacity: 0 }}
-            animate={inView ? { opacity: 1 } : { opacity: 0 }}
-            transition={{ duration: 1.5, delay: 0.5 }}
-          >
-            <p>✨ Также увлекаюсь UI/UX дизайном и открытым исходным кодом.</p>
-          </motion.div>
-        </section>
-
-        {/* Следующий белый блок */}
-        <section className="white-next-section" onMouseEnter={() => setDarkSection(false)}>
-          <div className="projects-placeholder">
-            <h2>Projects Section (будет здесь)</h2>
-          </div>
-        </section>
+        {/* Подключаем отдельные секции */}
+        <AboutUs />
+        <Projects />
       </main>
     </>
   );
