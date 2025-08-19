@@ -1,12 +1,52 @@
-import React from 'react';
-import '../styles/styles.css';
+import React from "react";
+import { FaVk, FaTelegramPlane, FaGithub } from "react-icons/fa";
+import "../styles/styles.css";
 
-const Footer = () => {
+export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <footer className="footer">
-      <p>© {new Date().getFullYear()} Ваше Имя. Все права защищены.</p>
+    <footer className="footer-section">
+      {/* Левая колонка */}
+      <div className="footer-left">
+        <h3>Ресурсы</h3>
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer">Документация</a>
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer">Блог</a>
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer">Контакты</a>
+      </div>
+
+      {/* Центр: кнопка назад */}
+      <div className="footer-center">
+        <button className="scroll-top-btn" onClick={scrollToTop}>↑</button>
+        <span className="scroll-top-text">Назад</span>
+      </div>
+
+      {/* Правая колонка: соцсети */}
+      <div className="footer-right">
+        <h3>Следите за мной здесь</h3>
+        <div className="social-buttons">
+          <div className="social-item">
+            <span>ВКонтакте</span>
+            <a href="https://vk.com" target="_blank" rel="noopener noreferrer">
+              <FaVk size={20} />
+            </a>
+          </div>
+          <div className="social-item">
+            <span>Телеграм</span>
+            <a href="https://t.me" target="_blank" rel="noopener noreferrer">
+              <FaTelegramPlane size={20} />
+            </a>
+          </div>
+          <div className="social-item">
+            <span>GitHub</span>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <FaGithub size={20} />
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
   );
-};
-
-export default Footer;
+}

@@ -1,7 +1,7 @@
 body {
-  font-family: 'Arial', sans-serif;
   background: #f7f7f7;
   margin: 0;
+  padding: 0;
   color: #333;
 }
 
@@ -312,7 +312,6 @@ body {
 
 .section-wrapper {
   margin-top: 100px;   /* отступ сверху */
-  margin-bottom: 1px; /* отступ снизу */
 }
 
 /* ===== Projects Section ===== */
@@ -522,5 +521,136 @@ body {
 
   .experience-company {
     color: #555;
+  }
+}
+
+/* ===== Footer ===== */
+.footer-section {
+  background: rgb(20, 20, 20);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer-left h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-left a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-left a:hover {
+  color: #fff;
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.scroll-top-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  color: rgb(20, 20, 20);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.scroll-top-btn:hover {
+  background: #ccc;
+  transform: translateY(-3px);
+}
+
+.scroll-top-text {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #aaa;
+  font-weight: 600;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* выравниваем по центру всей колонки */
+  gap: 20px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-right h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center; /* заголовок по центру */
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center; /* выравниваем элементы соцсетей по центру */
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* текст и иконка по центру */
+  gap: 10px;
+  font-weight: 600;
+  color: #fff; /* для контраста с темным фоном */
+}
+
+.social-item a {
+  color: #fff;
+  transition: color 0.2s ease;
+}
+
+.social-item a:hover {
+  color: #aaa;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .footer-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .footer-left,
+  .footer-right {
+    align-items: center;
+  }
+
+  .social-item {
+    justify-content: center;
   }
 }
