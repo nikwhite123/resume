@@ -272,7 +272,7 @@ body {
 .about-section {
   background-color: #000;   /* чёрный фон */
   color: #fff;              /* белый текст */
-  padding: 150px 50px;      /* отступы сверху/снизу и по бокам */
+  padding: 10px 50px;      /* отступы сверху/снизу и по бокам */
 }
 
 .about-container {
@@ -653,4 +653,14 @@ body {
   .social-item {
     justify-content: center;
   }
+}
+
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: left; /* добавляем выравнивание по левому краю */
+}
+
+.about-text p {
+  margin-bottom: 16px; /* расстояние между абзацами */
 }

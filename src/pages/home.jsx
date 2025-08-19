@@ -35,7 +35,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Hello, I am Nikita
+          Привет, я Никита
         </motion.h2>
 
         <div className="title-block">
@@ -45,7 +45,7 @@ export default function Home() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
-            Nikita Stenechkin -
+            Никита Стеничкин -
           </motion.h1>
 
           <motion.h1
