@@ -8,7 +8,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="footer-section">
+    <footer id ="contact" className="footer-section">
       {/* Левая колонка */}
       <div className="footer-left">
         <h3>Ресурсы</h3>
@@ -29,19 +29,19 @@ export default function Footer() {
         <div className="social-buttons">
           <div className="social-item">
             <span>ВКонтакте</span>
-            <a href="https://vk.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://vk.com/jjjustice" target="_blank" rel="noopener noreferrer">
               <FaVk size={20} />
             </a>
           </div>
           <div className="social-item">
             <span>Телеграм</span>
-            <a href="https://t.me" target="_blank" rel="noopener noreferrer">
+            <a href="https://t.me/nikwhite3" target="_blank" rel="noopener noreferrer">
               <FaTelegramPlane size={20} />
             </a>
           </div>
           <div className="social-item">
             <span>GitHub</span>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/nikwhite123" target="_blank" rel="noopener noreferrer">
               <FaGithub size={20} />
             </a>
           </div>

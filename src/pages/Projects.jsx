@@ -11,7 +11,7 @@ const links = {
 
 export default function Projects() {
   return (
-    <section className="projects-section">
+    <section id = "projects" className="projects-section">
       {/* Заголовок */}
       <motion.div
         className="projects-header"

@@ -6,7 +6,7 @@ import "../styles/styles.css";
 export default function Experience() {
   const experiences = [
     {
-      position: 'Инженер-программист',
+      position: 'Junior Frontend Dev',
       company: 'Компания "РИФ"',
       duration: '2024 - по сегодняшний день',
     },
@@ -16,8 +16,8 @@ export default function Experience() {
       duration: '2023',
     },
     {
-      position: 'Frontend-разработчик',
-      company: 'Мой стартап',
+      position: 'Junior Frontend Dev',
+      company: 'Стартап проект ИИ медицина Frontend Dev',
       duration: '2024',
     },
   ];

@@ -12,7 +12,6 @@ export default function Header() {
       {/* Левая часть — имя */}
       <div className="header-left">
         <a href="#top" className="brand" aria-label="На верх страницы">
-          Никита
         </a>
       </div>
 
