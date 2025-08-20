@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import "../styles/styles.css";
 
 const links = {
-  economicPulse: "https://github.com/nikwhite123/EconomicPulse",  // вставишь свои ссылки на GitHub
+  economicPulse: "https://github.com/nikwhite123/EconomicPulse",
   pirateCart: "https://github.com/nikwhite123/PirateCart",
   resume: "https://github.com/nikwhite123/resume",
 };
@@ -12,7 +12,6 @@ const links = {
 export default function Projects() {
   return (
     <section id = "projects" className="projects-section">
-      {/* Заголовок */}
       <motion.div
         className="projects-header"
         initial={{ opacity: 0, y: 30 }}
@@ -23,7 +22,6 @@ export default function Projects() {
         <h2>Мои проекты</h2>
       </motion.div>
 
-      {/* Карточки */}
       <motion.div
         className="project-list"
         initial={{ opacity: 0, y: 30 }}

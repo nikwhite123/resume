@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/styles.css"; // подключаем общий файл стилей
+import "../styles/styles.css";
 
 export default function Header() {
   const handleScroll = (id) => {
@@ -9,18 +9,16 @@ export default function Header() {
 
   return (
     <header className="header">
-      {/* Левая часть — имя */}
       <div className="header-left">
         <a href="#top" className="brand" aria-label="На верх страницы">
         </a>
       </div>
-
-      {/* Центр — навигация */}
       <nav className="nav" aria-label="Основная навигация">
         {[
           { id: "about", label: "Обо мне" },
-          { id: "skills", label: "Навыки" },
           { id: "projects", label: "Проекты" },
+          { id: "experience", label: "Опыт работы" },
+          { id: "skills", label: "Навыки" },
           { id: "contact", label: "Контакты" },
         ].map((item) => (
           <button
@@ -33,11 +31,9 @@ export default function Header() {
           </button>
         ))}
       </nav>
-
-      {/* Правая часть — полезные действия */}
       <div className="header-right">
         <a
-          href="#" // замените на путь к вашему PDF
+          href="#"
           download
           className="action-btn ghost-btn"
         >

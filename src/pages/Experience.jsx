@@ -1,4 +1,3 @@
-// src/pages/Experience.jsx
 import React from "react";
 import { motion } from "framer-motion";
 import "../styles/styles.css";
@@ -12,7 +11,7 @@ export default function Experience() {
     },
     {
       position: 'Инженер-схемотехник',
-      company: 'Мой стартап',
+      company: 'Стартап проект испытательный стенд',
       duration: '2023',
     },
     {
@@ -23,9 +22,8 @@ export default function Experience() {
   ];
 
   return (
-    <section className="experience-section">
+    <section id ="experience" className="experience-section">
       <div className="experience-container">
-        {/* Левая колонка: заголовок */}
         <div className="experience-left">
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
@@ -45,7 +43,6 @@ export default function Experience() {
           </motion.p>
         </div>
 
-        {/* Правая колонка: детали опыта */}
         <div className="experience-right">
           {experiences.map((exp, index) => (
             <motion.div

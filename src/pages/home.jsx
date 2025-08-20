@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import Header from "../components/Header";
 import VKPost from "../components/VKPost";
 import AboutUs from "../pages/AboutUs";
 import Projects from "../pages/Projects"; 
 import Experience from "../pages/Experience";
 import Footer from "../components/Footer";
+import Skills from "../pages/Skills";
 import "../styles/styles.css";
-import { motion, useAnimation } from "framer-motion";
+import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 export default function Home() {
@@ -96,6 +98,9 @@ export default function Home() {
         <div className="section-wrapper">
           <Experience />
         </div>
+        <div className="section-wrapper">
+       <Skills />
+       </div>
         <Footer />
       </main>
     </>

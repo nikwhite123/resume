@@ -6,7 +6,6 @@ export default function AboutUs() {
   return (
     <section id="about" className="about-section">
       <div className="about-container">
-        {/* Левая часть */}
         <motion.h2
           className="about-title"
           initial={{ opacity: 0, x: -50 }}
@@ -16,7 +15,6 @@ export default function AboutUs() {
           Обо мне
         </motion.h2>
 
-        {/* Правая часть */}
         <motion.p
           className="about-text"
           initial={{ opacity: 0, x: 50 }}
