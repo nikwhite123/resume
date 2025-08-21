@@ -67,4 +67,4 @@ I used GitHub Actions or the `gh-pages` package for automatic deployment. After 
 **[nikwhite123]** - Frontend Developer
 
 -   **Email:** [shaman3567@gmail.com](mailto:your.email@example.com)
--   **Telegram:** [[@your_username](https://t.me/nikwhite3)](https://t.me/your_username)
+-   **Telegram:** [https://t.me/nikwhite3](https://t.me/your_username)
