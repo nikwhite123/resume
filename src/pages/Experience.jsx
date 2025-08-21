@@ -10,13 +10,13 @@ export default function Experience() {
       duration: '2024 - по сегодняшний день',
     },
     {
-      position: 'Инженер-схемотехник',
+      position: 'Junior Frontend Dev',
       company: 'Стартап проект испытательный стенд',
-      duration: '2023',
+      duration: '2023-2024',
     },
     {
       position: 'Junior Frontend Dev',
-      company: 'Стартап проект ИИ медицина Frontend Dev',
+      company: 'Стартап проект ИИ медицина',
       duration: '2024',
     },
   ];

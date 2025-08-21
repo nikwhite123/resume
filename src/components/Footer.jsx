@@ -11,9 +11,9 @@ export default function Footer() {
     <footer id ="contact" className="footer-section">
       <div className="footer-left">
         <h3>Ресурсы</h3>
-        <a href="https://example.com" target="_blank" rel="noopener noreferrer">Документация</a>
-        <a href="https://example.com" target="_blank" rel="noopener noreferrer">Блог</a>
-        <a href="https://example.com" target="_blank" rel="noopener noreferrer">Контакты</a>
+        <a href="https://vite.dev/" target="_blank" rel="noopener noreferrer">Документация</a>
+        <a href="https://vk.com/jjjustice" target="_blank" rel="noopener noreferrer">Блог</a>
+        <a href="https://t.me/nikwhite3" target="_blank" rel="noopener noreferrer">Контакты</a>
       </div>
 
       <div className="footer-center">
