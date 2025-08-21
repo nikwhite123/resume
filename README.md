@@ -33,8 +33,8 @@ If you want to view the code or build the project yourself, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-github-username/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/nikwhite123/resume.git
+    cd resume
     ```
 
 2.  **Install the dependencies:**
