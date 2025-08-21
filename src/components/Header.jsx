@@ -33,7 +33,7 @@ export default function Header() {
       </nav>
       <div className="header-right">
         <a
-          href="./File CV/Resume.html"
+          href="#"
           download
           className="action-btn ghost-btn"
         >
