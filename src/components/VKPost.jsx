@@ -1,11 +1,9 @@
-// src/components/VKPost.jsx
 import React from "react";
 import { Heart, MessageCircle, Repeat2, Share2 } from "lucide-react";
 
 export default function VKPost() {
   return (
     <div className="vk-post">
-      {/* Верхняя часть: аватар + имя + дата */}
       <div className="vk-post-header">
         <img src="/images/avatar.jpg" alt="Аватар" />
         <div>
@@ -14,14 +12,12 @@ export default function VKPost() {
         </div>
       </div>
 
-      {/* Текст поста */}
       <div className="vk-post-text">
         👨‍💻 В свободное время изучаю новые технологии, вдохновляюсь дизайном и
         работаю над личными проектами. <br />
         ✨ Всегда открыт к новым вызовам.
       </div>
 
-      {/* Кнопки действий */}
       <div className="vk-post-actions">
         <button className="heart">
           <Heart size={16} /> <span>25</span>

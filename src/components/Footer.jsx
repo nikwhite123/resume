@@ -9,7 +9,6 @@ export default function Footer() {
 
   return (
     <footer id ="contact" className="footer-section">
-      {/* Левая колонка */}
       <div className="footer-left">
         <h3>Ресурсы</h3>
         <a href="https://example.com" target="_blank" rel="noopener noreferrer">Документация</a>
@@ -17,13 +16,11 @@ export default function Footer() {
         <a href="https://example.com" target="_blank" rel="noopener noreferrer">Контакты</a>
       </div>
 
-      {/* Центр: кнопка назад */}
       <div className="footer-center">
         <button className="scroll-top-btn" onClick={scrollToTop}>↑</button>
         <span className="scroll-top-text">Назад</span>
       </div>
 
-      {/* Правая колонка: соцсети */}
       <div className="footer-right">
         <h3>Следите за мной здесь</h3>
         <div className="social-buttons">
