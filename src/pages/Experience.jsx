@@ -12,7 +12,7 @@ export default function Experience() {
     {
       position: 'Junior Frontend Dev',
       company: 'Стартап проект испытательный стенд',
-      duration: '2023-2024',
+      duration: '2023 - 2024',
     },
     {
       position: 'Junior Frontend Dev',

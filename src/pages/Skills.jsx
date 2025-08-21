@@ -5,7 +5,7 @@ const skills = [
   { name: "HTML", img: "/images/html.png", level: "Уверенное владение" },
   { name: "CSS", img: "/images/css3.svg", level: "Хорошее знание" },
   { name: "JavaScript", img: "/images/javascript.png", level: "Средний уровень" },
-  { name: "React", img: "/images/react.png", level: "Уверенное владение" },
+  { name: "React", img: "/images/react.png", level: "Рабочий опыт" },
   { name: "React + Vite", img: "/images/vite.png", level: "Рабочий опыт" },
   { name: "GitHub", img: "/images/github.png", level: "Использую для проектов" },
 ];
