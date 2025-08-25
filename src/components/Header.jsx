@@ -31,15 +31,6 @@ export default function Header() {
           </button>
         ))}
       </nav>
-      <div className="header-right">
-        <a
-          href="#"
-          download
-          className="action-btn ghost-btn"
-        >
-          Скачать CV
-        </a>
-      </div>
     </header>
   );
 }
